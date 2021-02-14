@@ -91,6 +91,15 @@ export default {
         renderWindow.addEventListener(
             "mousedown", event => {
                 switch (this.hoveredFace) {
+                    case 4:
+                        rotateFace(
+                            [[1,  1, 1], [1,  1, 0], [1,  1, -1],
+                             [1,  0, 1], [1,  0, 0], [1,  0, -1],
+                             [1, -1, 1], [1, -1, 0], [1, -1, -1]],
+                            event.button == 0
+                        )
+                        break
+
                     case 10:
                         rotateFace(
                             [[ 1, 1, -1], [ 1, 1, 0], [ 1, 1, 1],
@@ -109,11 +118,29 @@ export default {
                         )
                         break
 
+                    case 14:
+                        rotateFace(
+                            [[1,  1, -1], [0,  1, -1], [-1,  1, -1],
+                             [1,  0, -1], [0,  0, -1], [-1,  0, -1],
+                             [1, -1, -1], [0, -1, -1], [-1, -1, -1]],
+                            event.button == 0
+                        )
+                        break
+
                     case 22:
                         rotateFace(
-                            [[-1,  1, -1], [-1,  1, 0], [-1,  1, 1],
-                             [-1,  0, -1], [-1,  0, 0], [-1,  0, 1],
-                             [-1, -1, -1], [-1, -1, 0], [-1, -1, 1]],
+                            [[1,  1, -1], [0,  1, -1], [-1,  1, -1],
+                             [1,  0, -1], [0,  0, -1], [-1,  0, -1],
+                             [1, -1, -1], [0, -1, -1], [-1, -1, -1]],
+                            event.button == 0
+                        )
+                        break
+
+                    case 16:
+                        rotateFace(
+                            [[-1, -1,  1], [0, -1,  1], [1, -1,  1],
+                             [-1, -1,  0], [0, -1,  0], [1, -1,  0],
+                             [-1, -1, -1], [0, -1, -1], [1, -1, -1]],
                             event.button == 0
                         )
                         break
@@ -131,8 +158,8 @@ export default {
         renderWindow.addEventListener(
             "mousemove", event => {
                 if (isDragging) {
-                    cubeGroup.rotation.y += event.movementX / 500
-                    cubeGroup.rotation.x += event.movementY / 500
+                    cubeGroup.rotation.y += event.movementX / 300
+                    cubeGroup.rotation.x += event.movementY / 300
                 }
             }
         )
