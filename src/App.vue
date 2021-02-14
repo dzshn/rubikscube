@@ -3,7 +3,6 @@
     <Cube/>
     <footer>
         <p>@dzshn 2021 | made with vue.js and three.js</p>
-        <small>bottom text</small>
     </footer>
 </template>
 
