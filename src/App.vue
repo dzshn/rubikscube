@@ -3,7 +3,7 @@
     <Cube/>
     <footer>
         <p>
-            <a href="https://github.com/dzshn/rubikscube/blob/master/LICENSE">MIT License</a> ─ <a href="https://github.com/dzshn">dzshn</a> | made with <a href="https://vuejs.org">vue.js</a> and <a href="https://threejs.org">three.js</a>
+            <a href="https://github.com/dzshn/rubikscube/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a> ─ <a href="https://github.com/dzshn" target="_blank" rel="noopener noreferrer">dzshn</a> | made with <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">vue.js</a> and <a href="https://threejs.org" target="_blank" rel="noopener noreferrer">three.js</a>
         </p>
     </footer>
 </template>

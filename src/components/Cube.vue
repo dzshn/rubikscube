@@ -43,8 +43,8 @@ export default {
         scene.add(cubeGroup)
         renderWindow.addEventListener(
             "mousemove", event => {
-                mousePos.x = (event.x - renderWindow.getBoundingClientRect().x) / renderWindow.clientWidth  *  2 - 1
-                mousePos.y = (event.y - renderWindow.getBoundingClientRect().y) / renderWindow.clientHeight * -2 + 1
+                mousePos.x = event.x / renderWindow.clientWidth  *  2 - 1
+                mousePos.y = event.y / renderWindow.clientHeight * -2 + 1
             }
         )
 
