@@ -1,9 +1,15 @@
 <template>
     <h1>cube</h1>
+    <div>
+        <h3>how do I use this?</h3>
+        <p>Left-click the middle pieces to rotate clockwise, Right-click to rotate counterclockwise, drag anywhere else to rotate the view</p>
+        <h3>why.</h3>
+        <p>good question</p>
+    </div>
     <Cube/>
     <footer>
         <p>
-            <a href="https://github.com/dzshn/rubikscube/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a> ─ <a href="https://github.com/dzshn" target="_blank" rel="noopener noreferrer">dzshn</a> | made with <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">vue.js</a> and <a href="https://threejs.org" target="_blank" rel="noopener noreferrer">three.js</a>
+            <a href="https://github.com/dzshn/rubikscube/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a> ─ <a href="https://github.com/dzshn" target="_blank" rel="noopener noreferrer">dzshn</a> | made with <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">vue.js</a> and <a href="https://threejs.org" target="_blank" rel="noopener noreferrer">three.js</a>
         </p>
     </footer>
 </template>
@@ -34,7 +40,7 @@ body {
     overflow: none;
 }
 
-h1, a {
+h1, h3, a {
     color: #fff
 }
 
@@ -52,4 +58,12 @@ footer {
     color: #fff;
     background: #222;
 }
+
+#app > div {
+    position: absolute;
+    width: 230px;
+    right: 10px;
+    top: 10px;
+}
+
 </style>
